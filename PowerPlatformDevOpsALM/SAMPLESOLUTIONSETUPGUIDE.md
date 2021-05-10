@@ -201,7 +201,7 @@ The **EnvironmentName** variable is used to specify the Azure DevOps environment
 
 6. Repeat adding the **EnvironmentName** and **ServiceConnection** for each of the pipelines created above (i.e. **deploy-test-ALMAcceleratorSampleSolution** and **deploy-production-ALMAcceleratorSampleSolution**)
 
-#### Create CDS Connection Reference Pipeline Variable
+#### Create Connection Reference Pipeline Variable
 
 The connection reference variable is **ConnectionReferences**. This pipeline variable is used for setting connection references in the ALM Accelerator Sample Solution to specific connections configured in a target environment after the solution is imported into an environment. Additionally, the **ConnectionReferences** variable is used to enable flows after the solution is imported based on owner of the connection specified in the variable.
 
