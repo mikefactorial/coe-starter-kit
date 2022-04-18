@@ -3,17 +3,6 @@ import { Config } from '../../src/common/config';
 
 
 describe('Config', () => {
-    test('Environment value', async () => {
-
-        // Arrange
-        Config.data = { "temp": "{env:TEMP}" }
-
-        // Act
-        await Config.init()
-
-        // Assert
-        expect(Config.data.temp.toString()).toBe(process.env.TEMP.toString())
-    })
 
     test('Config replacement', async () => {
 
