@@ -12,7 +12,7 @@ describe('Config', () => {
         await Config.init()
 
         // Assert
-        expect(Config.data.temp).toBe(process.env.TEMP)
+        expect(Config.data.temp.toString()).toBe(process.env.TEMP.toString())
     })
 
     test('Config replacement', async () => {
